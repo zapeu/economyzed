@@ -1,0 +1,4 @@
+name: EconomyCore
+version: 0.1
+main: com.zapeu.economy.EconomyCore
+api-version: "1.20"

@@ -1,4 +1,7 @@
-name: EconomyCore
+name: EconomyZeD
 version: 0.1
 main: com.zapeu.economy.EconomyCore
 api-version: "1.20"
+commands:
+  money:
+    description: Mostra saldo

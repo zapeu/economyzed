@@ -14,7 +14,13 @@ public final class EconomyCore extends JavaPlugin {
         AccountRepository repo = new InMemoryAccountRepository();
         AccountService service = new AccountService(repo);
 
-        getCommand("money").setExecutor(new MoneyCommand(service));
+        var command = getCommand("money");
+        if (command == null) {
+            getLogger().severe("Command 'money' not defined in plugin.yml");
+            return;
+        }
+        command.setExecutor(new MoneyCommand(service));
+
 
     }
 
